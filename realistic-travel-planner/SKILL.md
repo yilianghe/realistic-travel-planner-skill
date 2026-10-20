@@ -1,11 +1,13 @@
 ---
 name: realistic-travel-planner
-description: Plan and review practical leisure trips by clarifying traveler priorities, checking dated evidence, scheduling door-to-door travel and recovery, separating core and removable stops, and auditing time and budget. Use for personalized itineraries and itinerary repairs, rather than generic destination summaries or executing bookings.
+description: Plan and review practical leisure trips with usable route sequences, relevant lodging comparisons, date-aware weather checks, door-to-door schedules, and budget audits. Use for personalized itineraries, hiking plans, and trip repairs rather than generic destination summaries or executing bookings.
 ---
 
 # Realistic Travel Planner
 
 Make the trip executable and worthwhile for this traveler. A full calendar is not a success criterion. Respond in the user's language.
+
+Deliver useful planning, not an intake form or a series of cautions. Read the relevant sections of [trip-deliverables.md](references/trip-deliverables.md) whenever producing routes, lodging advice, weather advice, or a recovery plan after a blocked attraction. Reuse the established brief across turns. Once the material constraints are known, produce a substantive recommendation in the next answer; ask further questions only when their answers would change that recommendation.
 
 ## 1. Establish the planning contract before a daily itinerary
 
@@ -30,6 +32,8 @@ Keep an evidence ledger for decision-critical facts: claim, applicability date, 
 
 If a core activity depends on unknown entry/availability, keep it tentative and name a fallback and a latest decision time. Ask the user to check an authenticated booking screen only if the missing fact materially changes the trip and accessible channels cannot resolve it. Never invent certainty to finish a table.
 
+Localize a missing fact to the affected segment. An inaccessible map, unavailable hotel quote, or forecast outside its horizon must not erase the rest of the plan. Report a confirmed restriction once, then advance the decision with matched alternatives or a clearly labeled candidate structure. Do not repeat the same warning and ask the same budget/intake questions in successive answers. A spending allocation is not evidence of actual cost, and a risk notice alone is not an itinerary.
+
 ## 3. Choose what deserves the traveler's time
 
 Select anchors around the desired experience, not popularity. Group by geography only after checking operating windows and the traveler's rhythm. Explain tradeoffs when two must-do items conflict.
@@ -49,6 +53,14 @@ For each major move account for origin exit/checkout, luggage, walk to pickup/st
 Reserve real blocks for queues/security, meals, seated recovery, luggage, and arrival/departure friction. Respect last entry, fixed bookings, station/airport lead time and date-specific service. Distinguish arrival at the gate from actual entry. Use ranges or rounded times where uncertainty is large; precision is not evidence.
 
 Keep an executable base day and a short add-on list. Give a clear overrun rule, for example: if lunch finishes after 14:00, drop the optional viewpoint and keep the booked museum. If uncertainty threatens a core reservation, move it, change transport or leave more space.
+
+Show the route itself: named start/access/parking point, ordered stops, leg distances and times where supported, return geometry, and exit/turnaround logic. For hikes distinguish driving access from the walking track; give sourced distance, ascent, terrain and moving/photo/rest time separately when available. Label unsupported edges rather than inventing connections. A provider search/navigation link is a handoff to a map, not proof that a route was queried or a wild trail is passable.
+
+## Lodging and weather when relevant
+
+Determine whether an overnight stay serves the trip. For overnight trips compare useful base areas and normally 2-3 sourced properties, with date/party/room scope, parking, check-in/out, cancellation, total price and availability status. If rates are not released, recommend a base area and existing candidates without fabricating quotes. For a day trip state whether lodging is needed and why; do not add a hotel merely to populate a section. Honor an explicit request to compare accommodation even for a potential day trip.
+
+Weather advice must identify the destination/site, the travel date, the forecast's issue time and valid period. Retrieve a matching forecast when the date is covered; otherwise distinguish sourced seasonal context from an unavailable daily forecast. Do not use today's weather or a stale search excerpt as the travel-day forecast. Translate rain, wind, temperature and visibility into activity choices and a recheck/decision point; do not promise photographic light effects. Follow the operational details in [trip-deliverables.md](references/trip-deliverables.md).
 
 ## 5. Make costs comparable
 
@@ -70,4 +82,4 @@ For clocked schedules or nontrivial budget arithmetic, use [the audit schema](re
 
 ## Deliver in the amount of detail needed
 
-Start with the recommendation and the main compromise. Include the confirmed assumptions; a base itinerary with core/removable markers; door-to-door major moves; meal/recovery blocks; budget scope, subtotal/reserve/add-ons; relevant skips; and actionable unresolved items with sources and fallbacks. State what has actually been checked and what remains uncertain. A small trip needs a small answer. Do not claim booking or payment happened without performing an authorized action.
+Start with the recommendation and the main compromise. Include the confirmed assumptions; a route sequence and base itinerary with core/removable markers; door-to-door major moves; meal/recovery blocks; lodging decision/comparison when relevant; date-appropriate weather and its consequences; budget scope, subtotal/reserve/add-ons; relevant skips; and actionable unresolved items with sources and fallbacks. Explain omitted modules briefly when they matter, rather than silently skipping them. State what has actually been checked and what remains uncertain. Do not present an all-unknown table as completed research. A small trip needs a small answer. Do not claim booking or payment happened without performing an authorized action.
