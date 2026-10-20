@@ -68,6 +68,10 @@ Use one explicit budget scope and currency. Convert per-person, per-room, per-ve
 
 Keep base spending, contingency and optional increments separate. Check `base + contingency <= cap`; explain an overrun instead of hiding it in the reserve. Unknown prices remain unknown or have an explicitly labeled planning allowance; an allowance is not a verified quote. Include add-on transport when quoting an optional stop's marginal cost.
 
+## Build usable Plan B choices
+
+For consequential or likely disruptions, attach a concrete alternative to the affected step. Follow [itinerary-output.md](references/itinerary-output.md) for the copy-ready format and contingency requirements. Specify the trigger, named replacement or practical exit, door-to-door switch time, net cost change, and where the revised day rejoins the plan. Protect meals, recovery, fixed bookings and the reserve. Research alternatives under the same date, preference and evidence rules as the main plan; a nearby place is not automatically open or suitable. Prefer a few useful choices over an alternative for every stop.
+
 ## 6. Audit before presenting the final plan
 
 Check against the original traveler constraints and source evidence, not just your own draft:
@@ -77,9 +81,10 @@ Check against the original traveler constraints and source evidence, not just yo
 - Core bookings either verified for the date or explicitly tentative with a fallback.
 - Party/currency/night arithmetic, required cost categories, prepaid scope, reserve and optional increments.
 - Walking and accumulated load fit the group; a removable stop can actually be removed without breaking the next move.
+- Each offered Plan B fits its revised timeline and budget, has a workable decision cutoff, and does not depend on the same failure as the original. Audit mutually exclusive branches separately; replace the original expense rather than adding both meals or counting a nonrefundable expense as recovered.
 
 For clocked schedules or nontrivial budget arithmetic, use [the audit schema](references/audit-schema.md) and run `python scripts/audit_plan.py PLAN.json`. Save the intermediate JSON privately; do not require the traveler to read it. Prefer `--constraints CONSTRAINTS.json` to keep user limits separate from the generated plan. Fix errors and rerun. The checker verifies supplied numbers/windows only; it cannot prove sources, prices, route completeness, enjoyment or safety. If execution is unavailable, do the equivalent manual checks and disclose that the automated check was not run. Do not impose JSON or a code workflow for a simple recommendation.
 
-## Deliver in the amount of detail needed
+## Deliver a copy-ready, structured guide
 
-Start with the recommendation and the main compromise. Include the confirmed assumptions; a route sequence and base itinerary with core/removable markers; door-to-door major moves; meal/recovery blocks; lodging decision/comparison when relevant; date-appropriate weather and its consequences; budget scope, subtotal/reserve/add-ons; relevant skips; and actionable unresolved items with sources and fallbacks. Explain omitted modules briefly when they matter, rather than silently skipping them. State what has actually been checked and what remains uncertain. Do not present an all-unknown table as completed research. A small trip needs a small answer. Do not claim booking or payment happened without performing an authorized action.
+For a finished itinerary or substantive draft, read and apply [itinerary-output.md](references/itinerary-output.md). Deliver self-contained, structured prose in the user's language, ready to copy as a travel guide. Lead with the recommended plan and main compromise, then use clear sections and chronological blocks with core/removable markers, meal/rest time and Plan B choices beside the affected steps. Include route, relevant lodging judgement, date-aware weather, complete budget, skips, and actionable uncertainties with sources. Keep internal research logs and audit JSON out of the guide. Distinguish verified facts, estimates and unknowns locally; a provisional plan must say what prevents confirmation. Scale the format to the trip, and do not force the full template onto intake questions or a small follow-up. Do not claim booking or payment happened without performing an authorized action.

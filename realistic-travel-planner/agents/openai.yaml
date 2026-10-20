@@ -1,4 +1,4 @@
 interface:
   display_name: "务实旅行规划"
   short_description: "规划可用路线、按需比较住宿、核实日期天气，并检查门到门时间与完整预算"
-  default_prompt: "使用 $realistic-travel-planner，结合已有需求给出路线、住宿判断、适用日期的天气和预算；不确定的路段单独标注。"
+  default_prompt: "使用 $realistic-travel-planner，结合已有需求输出可直接复制的结构化攻略，包含路线、住宿判断、适用日期的天气、预算和关键环节的 Plan B；写明切换条件、具体替代、时间费用变化，不确定处单独标注。"
