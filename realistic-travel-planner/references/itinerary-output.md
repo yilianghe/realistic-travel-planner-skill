@@ -4,44 +4,80 @@ Apply this format to a finished itinerary or substantive draft, in the user's
 language. Keep a short trip compact. Intake, a single recommendation or a small
 follow-up does not need the full template.
 
-## Standalone guide structure
+## One home for each kind of information
 
-Use clear headings and short chronological paragraphs or bullets. Favor text
-that remains readable when copied into notes or a chat; use tables only when
-they make a comparison or budget easier to read. Do not output internal JSON,
-tool transcripts, long research diaries, or references such as “as above” that
-make the guide depend on the conversation.
+Write a standalone guide in the following order. Use short chronological prose
+or bullets; reserve tables for comparisons or budgets. Use the Chinese labels
+below for Chinese output, equivalent labels in other languages. Omit an empty
+section instead of filling it with generic advice. Do not add an opening essay
+or closing recap around the guide.
 
-1. **Trip at a glance:** destination and exact dates, starting area, party,
-   transport, budget scope, recommended route and the principal tradeoff. Label
-   a draft and its assumptions. Do not expose an unnecessary home address.
-2. **Route and day plan:** give the ordered route before the timeline. For each
-   block show time/range, named destination or navigation target, core or
-   removable status, door-to-door approach, activity/queue/meal/rest allocation,
-   and any reservation or last-entry condition. Put an applicable Plan B beside
-   that block. Separate add-ons from the committed day and explain when to cut
-   them. Include the return, exit or turnaround logic.
-3. **Meals and lodging:** name researched meal choices when recommending them;
-   give location, budget scope and opening/availability status. Reuse the meal
-   block instead of repeating the timeline. State whether lodging is useful;
-   for overnight trips compare suitable areas/properties and total costs under
-   the lodging reference. Do not force hotel listings into a day trip.
-4. **Weather and preparation:** identify the relevant date, forecast issue and
-   validity period, impact on the plan, useful equipment, and decision/recheck
-   time. Say when the trip date is outside the forecast horizon.
-5. **Budget:** currency and party scope, category amounts, base total,
-   contingency, optional increments and Plan B net changes. Label allowances
-   and unknowns. State what is excluded and why.
-6. **Choices and final checks:** explain relevant skips; summarize only the
-   contingencies worth finding quickly. List unresolved actions with who must
-   act, latest decision time and consequence. Add concise linked sources with
-   their applicability/checked date, and the actual time/budget audit outcome
-   with remaining limits. Never imply an unrun check passed.
+1. **行程卡 / Trip card:** one recommendation/status sentence, then compact
+   fields for dates, starting area, party, transport and budget scope. State the
+   principal compromise and decision-critical assumptions once. For a day trip,
+   put the no-overnight judgement here in one phrase; do not create a hotel
+   section. Avoid unnecessary home addresses.
+2. **路线与时间 / Route and timeline:** one route line per day, followed by
+   chronological blocks: **time | place/activity [core/removable]** and only the
+   needed approach, duration, queue, rest and entry conditions. Navigation
+   targets and transport estimates belong here. Put the named restaurant and
+   its useful details inside the meal block, and lodging choice/check-in inside
+   the relevant day's accommodation block. When needed, attach a comparison of
+   2-3 properties at the first overnight block; refer later nights back to it.
+   Do not create a second meals/hotels narrative. Keep add-ons outside the base
+   schedule with extra time/cost and drop condition. Include return/exit logic.
+   Refer to an applicable contingency as `B1` or `B2`, without copying its full
+   instructions into the timeline.
+3. **Plan B / Changes:** give each useful contingency one ID and one complete
+   entry. Include trigger/cutoff, specific replacement, switch logistics, net
+   cost difference, rejoin time and any dropped stop. Describe changed segments
+   only; do not reproduce an entire alternate day or add a second contingency
+   summary. Refer to the default itinerary for unchanged segments.
+4. **费用 / Budget:** the single expense ledger, with currency/party scope,
+   quantities, category amounts, base total, reserve, optional increments and
+   exclusions. Label estimates/allowances here. Candidate prices may appear in
+   meal/hotel comparisons for choosing; do not charge alternatives together or
+   repeat their descriptions in the ledger. Plan B entries own their net cost
+   changes; only show a branch total here if necessary to assess the cap.
+5. **出发前 / Before departure:** one weather statement with site, travel date,
+   issue/validity times and its practical consequence; then only relevant
+   equipment and a dated action checklist. Each unresolved action states
+   **who does what, by when, and what decision follows**. Describe a missing
+   fact where it affects the route/budget; here give the action, not another
+   paragraph explaining the same uncertainty. Do not restate the full Plan B.
+6. **取舍与依据 / Choices and evidence:** brief reasons for plausible stops
+   rejected for this traveler; concise source entries with date applicability
+   and checked-at information; at most one audit-result sentence giving actual
+   scope and remaining limits. Do not recap the route, budget, weather or
+   contingencies. Never imply an unrun check passed.
 
-Merge overlapping sections when helpful. Sources can sit beside critical facts
-and be grouped at the end for convenience; critical conditions must remain
-beside the affected activity. Leave out irrelevant modules with a brief reason
-when their absence would otherwise confuse the traveler.
+## Editing pass: remove repetition without hiding conditions
+
+- Merge repeated explanations, not useful navigation labels. A stop can appear
+  in the route line and its timed block; its full description belongs in the
+  block only. Core/removable markers belong beside activities, not in a second
+  list of the same activities. Rejected candidates belong in the choices section.
+- Keep essential entry, booking, closure and turnaround conditions visible at
+  the affected step. A critical condition may also need a short trip-card alert;
+  this justified repetition must not become repeated caution paragraphs.
+- Use self-contained references such as `B1 餐厅排队` and `第2天住宿同前晚`;
+  never rely on earlier chat messages or vague “as above”. Source links may sit
+  beside critical claims; an end source list identifies evidence without
+  retelling the claim. Do not duplicate the same full link throughout the guide.
+- Do not spread “forecast unavailable”, “price unconfirmed”, or “same-day return”
+  across several sections. Use a local status label, then an actionable checklist
+  entry only if a follow-up decision is needed. One global assumptions note can
+  cover shared estimates; keep segment-specific uncertainty next to that segment.
+- If the requested core is blocked or a substitute has not been accepted, lead
+  with the decision and a concise alternative comparison plus prerequisites.
+  Expand a candidate only when useful, label it as optional, and do not force a
+  full clocked substitute itinerary merely to populate this structure. An
+  unsupported time allocation must not look like a measured journey time.
+- For multi-day trips, repeat day blocks, not the whole guide structure. Shared
+  budgets, accommodation comparisons, preparation and sources appear once.
+- Before sending, remove any paragraph that neither adds a new fact/action nor
+  supplies an essential condition at the point of use. Keep internal JSON, tool
+  transcripts and research diaries out of the guide.
 
 ## A Plan B must be executable
 
