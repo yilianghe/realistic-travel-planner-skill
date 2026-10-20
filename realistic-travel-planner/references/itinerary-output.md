@@ -27,7 +27,8 @@ or closing recap around the guide.
    Do not create a second meals/hotels narrative. Keep add-ons outside the base
    schedule with extra time/cost and drop condition. Include return/exit logic.
    Refer to an applicable contingency as `B1` or `B2`, without copying its full
-   instructions into the timeline.
+   instructions into the timeline. Preserve the important time anchors described
+   below even when a full clocked itinerary is not yet supported.
 3. **Plan B / Changes:** give each useful contingency one ID and one complete
    entry. Include trigger/cutoff, specific replacement, switch logistics, net
    cost difference, rejoin time and any dropped stop. Describe changed segments
@@ -51,6 +52,38 @@ or closing recap around the guide.
    scope and remaining limits. Do not recap the route, budget, weather or
    contingencies. Never imply an unrun check passed.
 
+## Timing: anchors with flexibility
+
+Travelers need a sense of when to leave, eat, protect a core experience, stop
+adding activities, and return. Removing false precision must not remove these
+useful anchors. For a short day trip, a compact list of important nodes is often
+enough; do not schedule every photograph or invent arrival times at unmeasured
+waypoints.
+
+- **Fixed commitment:** a user constraint or verified booking/service deadline.
+  State its basis and required lead time; do not turn a proposed target into a
+  user requirement.
+- **Estimated window:** an arrival/activity range derived from known legs and
+  allowances. Explain consequential uncertainty once. If a transfer has no
+  defensible estimate, make the arrival dependent on its actual duration and
+  preserve the meal/return targets around it.
+- **Planning target / decision point:** a proposed meal window, return-to-car
+  target, or cutoff for dropping an optional stop. Label it as a scheduling
+  choice, not evidence of safe passage, opening permission or physical reach.
+
+Calculate a latest turnaround backwards: relevant return/exit deadline minus
+the remaining return duration, intervening stops and disruption buffer. Terrain,
+conditions and daylight/entry rules may require an earlier deadline. If a
+required input is unknown, name it and give the formula or a clearly hypothetical
+example. Never present an unsupported numeric turnaround as an established safe
+limit, nor a desired finish time as proof the full route fits.
+
+At each consequential overrun point, say which optional activity drops or which
+Plan B applies. Preserve meals and recovery instead of shifting the whole day
+later without checking downstream commitments. For a blocked destination or an
+unaccepted alternative, a brief conditional timing framework is appropriate
+when the user requests it; it does not imply authorization or feasibility.
+
 ## Editing pass: remove repetition without hiding conditions
 
 - Merge repeated explanations, not useful navigation labels. A stop can appear
@@ -71,8 +104,9 @@ or closing recap around the guide.
 - If the requested core is blocked or a substitute has not been accepted, lead
   with the decision and a concise alternative comparison plus prerequisites.
   Expand a candidate only when useful, label it as optional, and do not force a
-  full clocked substitute itinerary merely to populate this structure. An
-  unsupported time allocation must not look like a measured journey time.
+  full clocked substitute itinerary merely to populate this structure. Keep
+  known time anchors and requested planning targets visible; an unsupported
+  time allocation must not look like a measured journey time.
 - For multi-day trips, repeat day blocks, not the whole guide structure. Shared
   budgets, accommodation comparisons, preparation and sources appear once.
 - Before sending, remove any paragraph that neither adds a new fact/action nor
