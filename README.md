@@ -81,20 +81,6 @@ JSON 是 agent 内部的检查材料，旅行者直接阅读普通语言的行�
 某段路线、酒店价格或未来天气暂时查不到时，继续完成其他有依据的部分，
 把缺口限定在受影响的位置。目标受限时继续寻找匹配偏好的候选方案，说明体验上的妥协。
 
-## 和已评估项目的侧重点比较
-
-以下依据本仓库记录的上游版本与规则阅读，说明定位差异；行为对照见
-[第一版评估报告](evaluation/report.md)。
-
-| 项目 | 值得关注的侧重点 |
-|---|---|
-| [Adaptive Travel Planner](https://github.com/ryunana/adaptive-travel-planner-skill/tree/c2dd8913dfc2af6ad6e42cd2440340dc0cb33642) | 中国大陆目的地比较、天气与景观匹配、综合疲劳，以及取消或延期判断。 |
-| [Travel Planner Skill](https://github.com/ZawYePhyo/travel-planner-skill/tree/a5a09563ed4d2a27650f70873430d0f0f98523ee) | 偏好与预算采集、实际旅行节奏，以及将行程写入 Wanderlog 的工作流。 |
-| **Realistic Travel Planner** | **将路线、住宿、天气与完整费用放在同一套规划要求里，配合独立约束、可运行审计和公开评估记录。** |
-
-这些项目有重叠能力。本项目提供不同的工作重点与可复查方式；现有小样本评估
-尚不足以证明任何一个项目全面领先。
-
 ## 一份计划会交付什么
 
 | 内容 | 交付重点 |
@@ -152,20 +138,20 @@ python realistic-travel-planner/scripts/audit_plan.py evaluation/audit-example.j
 检查器只验证输入数据；不能证明路线/费用已完整列出、信息真实、预约有票、
 体力合适或旅行体验优秀。跨时区、夏令时和跨午夜行程需按契约另外处理。
 
-## 测试与其他 skill 的比较
+## 测试与评估
 
 见 [测试题](evaluation/cases.md)、[预先定义的观察标准](evaluation/rubric.md)、
 [评估报告](evaluation/report.md) 和 [原始输出](evaluation/results/)。
-同一组虚构证据用于三个独立 agent：本 skill、Adaptive Travel Planner、
-Travel Planner Skill。上游版本固定到 Git 提交，原文没有复制进本仓库。
+测试覆盖需求确认、门到门排程、预算漏项、赶车时限，以及目标受限后的行程调整。
+评估保留固定证据、观察标准与原始输出，便于复查规划依据。
 
 另有一次 [真实官网访问检查](evaluation/live-check.md)，如实记录了网页读取失败；
-不把搜索摘要当成完成核验。小样本、单次运行、作者判读，不能据此宣称
-比所有旅行 agent 更准确，也不能替代实际出游测试。
+不把搜索摘要当成完成核验。现有行为评估采用小样本、单次运行和作者判读，
+结论仍需更多真实场景与实际出游反馈验证。
 
 补充的路线、住宿、天气行为回归见 [模块测试](evaluation/module-cases.md) 与
-[模块评估](evaluation/module-report.md)。原始对比报告保留为第一版的历史评估，
-不是后续版本重新对比得出的结论。所有公开新增案例均为虚构数据。
+[模块评估](evaluation/module-report.md)。第一版报告保留为历史记录，
+后续模块的验证范围在对应报告中单独说明。所有公开新增案例均为虚构数据。
 
 ## 能力边界
 
