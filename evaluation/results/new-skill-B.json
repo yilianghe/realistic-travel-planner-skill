@@ -1,0 +1,368 @@
+{
+  "currency": "CNY",
+  "travelers": 2,
+  "budget_cap": 900,
+  "reserve": 100,
+  "declared_base_total": 709,
+  "required_categories": [
+    "lodging",
+    "transport",
+    "food",
+    "tickets",
+    "luggage"
+  ],
+  "days": [
+    {
+      "date": "2026-11-14",
+      "earliest_start": "09:30",
+      "latest_end": "22:00",
+      "items": [
+        {
+          "id": "station_hotel",
+          "kind": "transport",
+          "start": "09:30",
+          "end": "10:10",
+          "status": "estimated",
+          "cost_refs": [
+            "taxi_station"
+          ],
+          "door_to_door": true,
+          "min_minutes": 40,
+          "components": "B2: 5+10+20+5 min; walking 0.6 km"
+        },
+        {
+          "id": "arrival_buffer",
+          "kind": "buffer",
+          "start": "10:10",
+          "end": "10:20",
+          "status": "estimated",
+          "cost_refs": []
+        },
+        {
+          "id": "luggage",
+          "kind": "logistics",
+          "start": "10:20",
+          "end": "10:35",
+          "status": "estimated",
+          "cost_refs": [
+            "storage"
+          ],
+          "min_minutes": 15
+        },
+        {
+          "id": "nearby_lunch_friction",
+          "kind": "buffer",
+          "start": "10:35",
+          "end": "10:45",
+          "status": "estimated",
+          "cost_refs": [],
+          "note": "B10 nearby lunch; no measured extra distance. This and other incidental walking are inside remaining 0.5 km, not claimed zero."
+        },
+        {
+          "id": "lunch",
+          "kind": "meal",
+          "start": "10:45",
+          "end": "11:30",
+          "status": "estimated",
+          "cost_refs": [
+            "lunch_cost"
+          ],
+          "min_minutes": 45
+        },
+        {
+          "id": "hotel_museum",
+          "kind": "transport",
+          "start": "11:30",
+          "end": "12:05",
+          "status": "estimated",
+          "cost_refs": [
+            "bus_museum"
+          ],
+          "door_to_door": true,
+          "min_minutes": 35,
+          "components": "B3: 5+10+15+5 min; walking 0.7 km"
+        },
+        {
+          "id": "museum_travel_buffer",
+          "kind": "buffer",
+          "start": "12:05",
+          "end": "12:15",
+          "status": "estimated",
+          "cost_refs": []
+        },
+        {
+          "id": "museum_queue",
+          "kind": "queue",
+          "start": "12:15",
+          "end": "12:35",
+          "status": "estimated",
+          "cost_refs": [],
+          "min_minutes": 20
+        },
+        {
+          "id": "museum_entry_buffer",
+          "kind": "buffer",
+          "start": "12:35",
+          "end": "12:45",
+          "status": "estimated",
+          "cost_refs": []
+        },
+        {
+          "id": "museum",
+          "kind": "core",
+          "start": "12:45",
+          "end": "14:45",
+          "status": "unknown",
+          "cost_refs": [
+            "museum_ticket"
+          ],
+          "min_minutes": 120,
+          "tentative": true,
+          "fallback": "By 2026-11-13 20:00 UTC+08 confirm a compatible dated reservation and total remaining museum/incidental walking <=0.5 km; otherwise use the B9 hotel-return hall day described in traveler answer, dropping old town because no direct hall-old-town route is supplied.",
+          "window": {
+            "start": "12:00",
+            "end": "17:00",
+            "last_entry": "16:00"
+          }
+        },
+        {
+          "id": "museum_oldtown",
+          "kind": "transport",
+          "start": "14:45",
+          "end": "15:05",
+          "status": "estimated",
+          "cost_refs": [],
+          "door_to_door": true,
+          "min_minutes": 20,
+          "components": "B5: walking 20 min/1.0 km"
+        },
+        {
+          "id": "oldtown_approach_buffer",
+          "kind": "buffer",
+          "start": "15:05",
+          "end": "15:15",
+          "status": "estimated",
+          "cost_refs": []
+        },
+        {
+          "id": "afternoon_rest",
+          "kind": "rest",
+          "start": "15:15",
+          "end": "15:45",
+          "status": "estimated",
+          "cost_refs": [],
+          "min_minutes": 30,
+          "note": "Seated; arrange a seat before starting the old-town circuit."
+        },
+        {
+          "id": "oldtown",
+          "kind": "core",
+          "start": "15:45",
+          "end": "16:45",
+          "status": "estimated",
+          "cost_refs": [
+            "oldtown_ticket"
+          ],
+          "min_minutes": 60,
+          "note": "B5 internal walking 1.0 km"
+        },
+        {
+          "id": "dinner",
+          "kind": "meal",
+          "start": "16:45",
+          "end": "17:30",
+          "status": "estimated",
+          "cost_refs": [
+            "dinner_cost"
+          ],
+          "min_minutes": 45
+        },
+        {
+          "id": "oldtown_hotel",
+          "kind": "transport",
+          "start": "17:30",
+          "end": "18:00",
+          "status": "estimated",
+          "cost_refs": [
+            "taxi_return"
+          ],
+          "door_to_door": true,
+          "min_minutes": 30,
+          "components": "B6 includes wait, 30 min; walking 0.2 km"
+        },
+        {
+          "id": "return_buffer",
+          "kind": "buffer",
+          "start": "18:00",
+          "end": "18:15",
+          "status": "estimated",
+          "cost_refs": []
+        },
+        {
+          "id": "checkin",
+          "kind": "logistics",
+          "start": "18:15",
+          "end": "18:30",
+          "status": "estimated",
+          "cost_refs": [
+            "hotel"
+          ],
+          "min_minutes": 15
+        },
+        {
+          "id": "boat",
+          "kind": "optional",
+          "included": false,
+          "status": "verified",
+          "cost_refs": [
+            "boat_ticket",
+            "boat_return_increment"
+          ],
+          "note": "Excluded: adds 1.5 km walk and CNY 170 net; incompatible with base schedule and reserve-inclusive cap."
+        },
+        {
+          "id": "viewpoint",
+          "kind": "optional",
+          "included": false,
+          "status": "verified",
+          "cost_refs": [
+            "viewpoint_taxi",
+            "viewpoint_ticket"
+          ],
+          "note": "Excluded: adds 145 min, stairs and CNY 180; low fit."
+        }
+      ]
+    }
+  ],
+  "costs": [
+    {
+      "id": "hotel",
+      "category": "lodging",
+      "currency": "CNY",
+      "unit_amount": 320,
+      "quantity": 1,
+      "included": true,
+      "status": "verified"
+    },
+    {
+      "id": "taxi_station",
+      "category": "transport",
+      "currency": "CNY",
+      "unit_amount": 30,
+      "quantity": 1,
+      "included": true,
+      "status": "estimated"
+    },
+    {
+      "id": "bus_museum",
+      "category": "transport",
+      "currency": "CNY",
+      "unit_amount": 4,
+      "quantity": 1,
+      "included": true,
+      "status": "estimated"
+    },
+    {
+      "id": "taxi_return",
+      "category": "transport",
+      "currency": "CNY",
+      "unit_amount": 35,
+      "quantity": 1,
+      "included": true,
+      "status": "estimated"
+    },
+    {
+      "id": "lunch_cost",
+      "category": "food",
+      "currency": "CNY",
+      "unit_amount": 100,
+      "quantity": 1,
+      "included": true,
+      "status": "unknown",
+      "allowance_reason": "Hotel-nearby lunch is permitted by B10, but its exact price is unknown. CNY 100 whole-party is a spending allowance referenced to the B5 old-town meal price; choose within this allowance, not a verified hotel-nearby quote."
+    },
+    {
+      "id": "dinner_cost",
+      "category": "food",
+      "currency": "CNY",
+      "unit_amount": 100,
+      "quantity": 1,
+      "included": true,
+      "status": "verified"
+    },
+    {
+      "id": "museum_ticket",
+      "category": "tickets",
+      "currency": "CNY",
+      "unit_amount": 60,
+      "quantity": 2,
+      "included": true,
+      "status": "verified"
+    },
+    {
+      "id": "oldtown_ticket",
+      "category": "tickets",
+      "currency": "CNY",
+      "unit_amount": 0,
+      "quantity": 1,
+      "included": true,
+      "status": "verified"
+    },
+    {
+      "id": "storage",
+      "category": "luggage",
+      "currency": "CNY",
+      "unit_amount": 0,
+      "quantity": 1,
+      "included": true,
+      "status": "verified"
+    },
+    {
+      "id": "boat_ticket",
+      "category": "tickets",
+      "currency": "CNY",
+      "unit_amount": 80,
+      "quantity": 2,
+      "included": false,
+      "status": "verified"
+    },
+    {
+      "id": "boat_return_increment",
+      "category": "transport",
+      "currency": "CNY",
+      "unit_amount": 10,
+      "quantity": 1,
+      "included": false,
+      "status": "estimated",
+      "derivation": "B7 pier-hotel 45 minus replaced B6 oldtown-hotel 35; net increment."
+    },
+    {
+      "id": "viewpoint_taxi",
+      "category": "transport",
+      "currency": "CNY",
+      "unit_amount": 120,
+      "quantity": 1,
+      "included": false,
+      "status": "verified"
+    },
+    {
+      "id": "viewpoint_ticket",
+      "category": "tickets",
+      "currency": "CNY",
+      "unit_amount": 30,
+      "quantity": 2,
+      "included": false,
+      "status": "verified"
+    }
+  ],
+  "applicability": "Conditional museum-and-oldtown day; museum reservation and missing indoor/incidental walking must be resolved before commitment. All times local UTC+08:00.",
+  "evidence_checked_at": "2026-10-19T15:00:00+08:00",
+  "manual_audit": {
+    "known_walk_km": 3.5,
+    "walking_limit_km": 4,
+    "walking_status": "unknown; <=0.5 km remains for museum/interior/meal/hotel incidents",
+    "next_day_departure": "outside scope",
+    "breakfast": "not required by fixture",
+    "budget": "Prepaid hotel included. Base 709 + reserve 100 = 809 <= 900; headroom 91."
+  }
+}

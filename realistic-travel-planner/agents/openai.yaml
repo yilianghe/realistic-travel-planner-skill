@@ -1,0 +1,4 @@
+interface:
+  display_name: "务实旅行规划"
+  short_description: "先确认作息体力与预算，再核实信息、规划门到门路线并检查时间和费用遗漏"
+  default_prompt: "使用 $realistic-travel-planner，先确认会改变行程的需求，再制定有依据、留有余量的旅行计划。"

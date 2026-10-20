@@ -1,0 +1,24 @@
+{
+  "currency": "CNY",
+  "travelers": 2,
+  "budget_cap": 150,
+  "reserve": 30,
+  "declared_base_total": 80,
+  "required_categories": ["transport"],
+  "days": [{
+    "date": "2026-11-14",
+    "earliest_start": "13:40",
+    "latest_end": "15:50",
+    "items": [
+      {"id":"oldtown-hotel","kind":"transport","start":"13:40","end":"14:05","min_minutes":25,"door_to_door":true,"status":"estimated","cost_refs":["taxi-hotel"]},
+      {"id":"luggage","kind":"logistics","start":"14:05","end":"14:20","min_minutes":15,"status":"verified","cost_refs":[]},
+      {"id":"rest","kind":"rest","start":"14:20","end":"14:50","min_minutes":30,"status":"estimated","cost_refs":[]},
+      {"id":"hotel-station","kind":"transport","start":"14:50","end":"15:40","min_minutes":50,"door_to_door":true,"status":"estimated","cost_refs":["taxi-station"]},
+      {"id":"buffer","kind":"buffer","start":"15:40","end":"15:50","status":"estimated","cost_refs":[]}
+    ]
+  }],
+  "costs": [
+    {"id":"taxi-hotel","category":"transport","currency":"CNY","unit_amount":30,"quantity":1,"included":true,"status":"estimated"},
+    {"id":"taxi-station","category":"transport","currency":"CNY","unit_amount":50,"quantity":1,"included":true,"status":"estimated"}
+  ]
+}

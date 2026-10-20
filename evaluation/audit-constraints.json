@@ -1,0 +1,15 @@
+{
+  "currency":"CNY",
+  "travelers":2,
+  "budget_cap":150,
+  "minimum_reserve":30,
+  "required_categories":["transport"],
+  "required_item_ids":["luggage","rest","hotel-station"],
+  "days":{"2026-11-14":{"earliest_start":"13:40","latest_end":"15:50"}},
+  "activities":{
+    "oldtown-hotel":{"min_minutes":25},
+    "luggage":{"min_minutes":15},
+    "rest":{"min_minutes":30},
+    "hotel-station":{"min_minutes":50}
+  }
+}

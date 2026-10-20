@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "errors": [],
+  "totals": {
+    "currency": "CNY",
+    "base": "80",
+    "reserve": "30",
+    "base_plus_reserve": "110",
+    "cap": "150",
+    "headroom": "40",
+    "excluded_addons": "0"
+  },
+  "limits": "Checks supplied data only; does not verify live facts, completeness of routes/costs, fatigue, or source truth."
+}

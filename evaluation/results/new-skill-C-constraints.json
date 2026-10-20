@@ -1,0 +1,32 @@
+{
+  "currency": "CNY",
+  "travelers": 2,
+  "budget_cap": 150,
+  "minimum_reserve": 30,
+  "required_categories": [
+    "transport"
+  ],
+  "required_item_ids": [
+    "restaurant_hotel",
+    "pickup",
+    "hotel_station"
+  ],
+  "days": {
+    "2026-11-14": {
+      "earliest_start": "13:40",
+      "latest_end": "15:50"
+    }
+  },
+  "activities": {
+    "restaurant_hotel": {
+      "min_minutes": 25
+    },
+    "pickup": {
+      "min_minutes": 15
+    },
+    "hotel_station": {
+      "min_minutes": 50
+    }
+  },
+  "source": "C1-C5 fixture; calendar date absent and normalized for clock-only audit."
+}

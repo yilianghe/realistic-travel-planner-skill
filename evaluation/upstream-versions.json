@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "https://github.com/ryunana/adaptive-travel-planner-skill",
+    "commit": "c2dd8913dfc2af6ad6e42cd2440340dc0cb33642",
+    "skill_sha256": "e183d7972e900744884fa434d944c021769a03bb6018e2be9b26f0b92b60ac14",
+    "checked_at": "2026-10-19T11:40:37.101080+00:00"
+  },
+  {
+    "repository": "https://github.com/ZawYePhyo/travel-planner-skill",
+    "commit": "a5a09563ed4d2a27650f70873430d0f0f98523ee",
+    "skill_sha256": "94937cd99e489435e129379819555ff1f84b2952ac50743ef5b5c551ed574042",
+    "checked_at": "2026-10-19T11:40:41.626087+00:00"
+  }
+]

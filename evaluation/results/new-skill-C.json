@@ -1,0 +1,101 @@
+{
+  "currency": "CNY",
+  "travelers": 2,
+  "budget_cap": 150,
+  "reserve": 30,
+  "declared_base_total": 80,
+  "required_categories": [
+    "transport"
+  ],
+  "days": [
+    {
+      "date": "2026-11-14",
+      "earliest_start": "13:40",
+      "latest_end": "15:50",
+      "items": [
+        {
+          "id": "restaurant_hotel",
+          "kind": "transport",
+          "start": "13:40",
+          "end": "14:05",
+          "status": "estimated",
+          "cost_refs": [
+            "c_taxi1"
+          ],
+          "door_to_door": true,
+          "min_minutes": 25
+        },
+        {
+          "id": "first_buffer",
+          "kind": "buffer",
+          "start": "14:05",
+          "end": "14:15",
+          "status": "estimated",
+          "cost_refs": []
+        },
+        {
+          "id": "pickup",
+          "kind": "logistics",
+          "start": "14:15",
+          "end": "14:30",
+          "status": "estimated",
+          "cost_refs": [],
+          "min_minutes": 15,
+          "note": "Seated when possible"
+        },
+        {
+          "id": "recovery",
+          "kind": "rest",
+          "start": "14:30",
+          "end": "14:40",
+          "status": "estimated",
+          "cost_refs": [],
+          "min_minutes": 10
+        },
+        {
+          "id": "hotel_station",
+          "kind": "transport",
+          "start": "14:40",
+          "end": "15:30",
+          "status": "estimated",
+          "cost_refs": [
+            "c_taxi2"
+          ],
+          "door_to_door": true,
+          "min_minutes": 50,
+          "components": "10 wait +30 ride +10 walk"
+        },
+        {
+          "id": "departure_buffer",
+          "kind": "buffer",
+          "start": "15:30",
+          "end": "15:45",
+          "status": "estimated",
+          "cost_refs": [],
+          "note": "Arrival may use this buffer; still 5 min before mandatory 15:50 entry"
+        }
+      ]
+    }
+  ],
+  "costs": [
+    {
+      "id": "c_taxi1",
+      "category": "transport",
+      "currency": "CNY",
+      "unit_amount": 30,
+      "quantity": 1,
+      "included": true,
+      "status": "estimated"
+    },
+    {
+      "id": "c_taxi2",
+      "category": "transport",
+      "currency": "CNY",
+      "unit_amount": 50,
+      "quantity": 1,
+      "included": true,
+      "status": "estimated"
+    }
+  ],
+  "note": "Fictional date placeholder only: case C supplies same-day clock but no calendar date; all elapsed times are same-date. Paid tickets excluded by user."
+}

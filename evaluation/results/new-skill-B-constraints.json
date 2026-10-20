@@ -1,0 +1,46 @@
+{
+  "currency": "CNY",
+  "travelers": 2,
+  "budget_cap": 900,
+  "minimum_reserve": 100,
+  "required_categories": ["lodging", "transport", "food", "tickets", "luggage"],
+  "required_item_ids": ["station_hotel", "luggage", "lunch", "hotel_museum", "museum_queue", "museum", "museum_oldtown", "afternoon_rest", "oldtown", "dinner", "oldtown_hotel", "checkin"],
+  "days": {"2026-11-14": {"earliest_start": "09:30", "latest_end": "22:00"}},
+  "activities": {
+    "station_hotel": {"min_minutes": 40},
+    "luggage": {"min_minutes": 15, "window": {"start": "10:00", "end": "23:59"}},
+    "lunch": {"min_minutes": 45},
+    "hotel_museum": {"min_minutes": 35},
+    "museum_queue": {"min_minutes": 20},
+    "museum": {"min_minutes": 120, "window": {"start": "12:00", "end": "17:00", "last_entry": "16:00"}},
+    "museum_oldtown": {"min_minutes": 20},
+    "afternoon_rest": {"min_minutes": 30, "window": {"start": "12:00", "end": "22:00"}},
+    "oldtown": {"min_minutes": 60},
+    "dinner": {"min_minutes": 45},
+    "oldtown_hotel": {"min_minutes": 30},
+    "checkin": {"min_minutes": 15, "window": {"start": "15:00", "end": "23:59"}},
+    "boat": {"min_minutes": 50, "window": {"start": "16:30", "end": "17:20"}},
+    "fallback_hall": {"min_minutes": 60, "window": {"start": "13:00", "end": "17:00"}}
+  },
+  "source_ledger": {
+    "checked_at": "2026-10-19T15:00:00+08:00",
+    "applicability_date": "2026-11-14",
+    "user": "2 adults; CNY 900 whole party including prepaid hotel, all same-day transport, meals and admission; CNY 100 reserve; no breakfast required; excludes next-day departure; sleep by 22:00; max walking 4 km per person/day; lunch and dinner >=45 min; seated afternoon rest >=30 min.",
+    "B1": "Hotel CNY 320 prepaid, one room one night; storage free from 10:00, check-in from 15:00.",
+    "B2": "Station exit to hotel: 5 walk + 10 wait + 20 ride + 5 walk = 40 min, CNY 30 per vehicle, walk 0.6 km; estimated.",
+    "B3": "Hotel to museum gate: 5 walk + 10 wait + 15 ride + 5 walk = 35 min, CNY 4 party, walk 0.7 km; queue/security extra 20 min; estimated.",
+    "B4": "Official notice dated 2026-10-18: open 12:00, last entry 16:00, closes 17:00; CNY 60/person, >=120 min; inventory unknown behind login. 2024 blog 09:00 opening inapplicable.",
+    "B5": "Museum to old town walk 20 min/1 km; old town >=60 min/1 km internally; free; local meal CNY 100/party per meal without extra transfer.",
+    "B6": "Old town to hotel 30 min incl wait, CNY 35/vehicle, walk 0.2 km; luggage and check-in each 15 min.",
+    "B7": "Boat CNY 80/person; check-in closes 16:10, departure 16:30, cruise 50 min; old town to pier walk 25 min/1.5 km; pier to hotel taxi CNY 45/35 min incl wait, walk 0.2 km.",
+    "B8": "Viewpoint adds taxi CNY 120 and return travel 100 min, stairs 45 min, tickets CNY 30/person.",
+    "B9": "Fallback hall 13:00-17:00, no booking, free, >=60 min; hotel round trip bus 35 min each direction/CNY 4 per party each, total walk 1.4 km.",
+    "B10": "Other prices unavailable; route/queue estimates exclude disruption buffer; lunch near hotel/at station feasible; breakfast not required."
+  },
+  "manual_constraints": {
+    "max_daily_walk_km_per_person": 4,
+    "known_main_route_walk_km": 3.5,
+    "unknown_walking": "Museum interior, meal/hotel incidental walking unknown; all such walking combined must fit remaining 0.5 km for main route, otherwise main route is not validated.",
+    "core_admission": "Museum not guaranteed; must confirm dated slot before locking main plan."
+  }
+}
